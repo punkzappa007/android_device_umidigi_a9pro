@@ -96,3 +96,40 @@ TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,discard,noauto_da_alloc,data=order
 # Debug
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
+
+# SHRP Flags
+# Device codename
+SHRP_DEVICE_CODE := noob
+# Path of your SHRP device tree
+SHRP_PATH := device/umidigi/$(SHRP_DEVICE_CODE)
+# Maintainer name
+SHRP_MAINTAINER := punkzappa007
+# Recovery Type (for "About" section only)
+# Default (if not set): N/A
+SHRP_REC_TYPE := SAR
+# Your device's recovery path, dont use blindly
+SHRP_REC := /dev/block/by-name/recovery
+# internal storage path
+SHRP_INTERNAL := /sdcard
+# If your device has an external sdcard
+SHRP_EXTERNAL := /external_sd
+# USB OTG path
+SHRP_OTG := /usb_otg
+# Flashlight: (0 = disable, 1 = enable)
+SHRP_FLASH := 1
+# custom led paths for flashlight
+# find yours then replace the examples here
+SHRP_CUSTOM_FLASHLIGHT := true
+SHRP_FONP_1 := "/sys/devices/virtual/torch/torch/torch_level"
+SHRP_FONP_2 := /sys/devices/virtual/torch/torch/torch_level
+SHRP_FLASH_MAX_BRIGHTNESS := 1
+# For notch devices
+SHRP_NOTCH := true
+# SHRP Dark mode, use this flag to have dark theme set by default
+SHRP_DARK := true
+# Do not include the SHRP theming system
+SHRP_LITE := true
+# Addon - Clear Fingerprint (remove fingerprint lock from system)
+SHRP_SKIP_DEFAULT_ADDON_3 := true
+SHRP_OFFICIAL := true
+SHRP_NO_SAR_AUTOMOUNT := true
