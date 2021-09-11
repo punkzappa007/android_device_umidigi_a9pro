@@ -33,8 +33,20 @@ PRODUCT_BRAND := UMIDIGI
 PRODUCT_MODEL := A9 Pro
 PRODUCT_MANUFACTURER := UMIDIGI
 
-# Dynamic Partition
+# Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+TARGET_RECOVERY_DEVICE_MODULES += \
+    libkeymaster4 \
+    libpuresoftkeymasterdevice \
+    ashmemd_aidl_interface-cpp \
+    libashmemd_client
+
+TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster4.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libpuresoftkeymasterdevice.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/ashmemd_aidl_interface-cpp.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libashmemd_client.so
 
 # Fastbootd
 PRODUCT_PACKAGES += \
