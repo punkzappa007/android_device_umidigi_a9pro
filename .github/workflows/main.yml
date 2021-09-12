@@ -17,9 +17,9 @@ on:
 
 env:
   MANIFEST: git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-10.0
-  DEVICE: noob
+  DEVICE: A9-Pro
   DT_LINK: https://github.com/macukex1991/android_device_umidigi_a9pro
-  DT_PATH: device/umidigi/noob
+  DT_PATH: device/umidigi/A9-Pro
   CHAT_ID: ${{ secrets.TEST_CHAT_ID }}
   BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
   TARGET: recoveryimage
