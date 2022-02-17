@@ -16,7 +16,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/umidigi/A9_Pro
+DEVICE_PATH := device/umidigi/A9_pro
 
 # Architecture
 TARGET_ARCH := arm64
