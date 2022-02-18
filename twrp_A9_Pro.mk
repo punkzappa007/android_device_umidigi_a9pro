@@ -18,10 +18,11 @@
 
 # Release Name
 PRODUCT_RELEASE_NAME := A9_pro
-$(call inherit-product, device/umidigi/A9_Pro/device.mk)
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, device/umidigi/A9_Pro/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := A9_Pro
