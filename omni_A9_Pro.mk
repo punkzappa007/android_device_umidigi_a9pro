@@ -18,7 +18,7 @@
 
 # Release Name
 PRODUCT_RELEASE_NAME := A9_pro
-$(call inherit-product, device/TECNO/LD7/device.mk)
+$(call inherit-product, device/umidigi/A9_Pro/device.mk)
 
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
