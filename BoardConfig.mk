@@ -47,7 +47,7 @@ TARGET_USES_UEFI := true
 TARGET_BOARD_PLATFORM := mt6771
 
 # Kernel
-BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.selinux=permissive androidboot.boot_devices=bootdevice
+BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.selinux=permissive
 BOARD_KERNEL_BASE          := 0x40078000
 BOARD_KERNEL_OFFSET        := 0x00008000
 BOARD_KERNEL_TAGS_OFFSET   := 0x13f88000
@@ -121,12 +121,10 @@ RECOVERY_SDCARD_ON_DATA := true
 
 # Crypto
 TW_INCLUDE_CRYPTO := true
-#TW_INCLUDE_FBE := true
 TW_INCLUDE_CRYPTO_FBE := true
+TW_INCLUDE_FBE_METADATA_DECRYPT := true
+BOARD_USES_METADATA_PARTITION := true
 
-# AVB - Android Verified Boot / dm-verity
-BOARD_AVB_ENABLE := true
-BOARD_AVB_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
 
 # TWRP specific build flags
 TARGET_OTA_ASSERT_DEVICE := A9_Pro
