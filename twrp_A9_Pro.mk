@@ -25,7 +25,7 @@ $(call inherit-product, vendor/omni/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := A9_Pro
-PRODUCT_NAME := omni_A9_Pro
+PRODUCT_NAME := twrp_A9_Pro
 PRODUCT_BRAND := UMIDIGI
 PRODUCT_MODEL := A9 Pro
 PRODUCT_MANUFACTURER := UMIDIGI
