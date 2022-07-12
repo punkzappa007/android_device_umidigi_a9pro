@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/umidigi/A9_Pro
+DEVICE_PATH := device/UMIDIGI/A9_Pro
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
