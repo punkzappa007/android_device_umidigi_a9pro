@@ -70,6 +70,7 @@ then
 	    	export FOX_ENABLE_APP_MANAGER=1
 		export FOX_USE_NANO_EDITOR=1
 		export FOX_EXTREME_SIZE_REDUCTION=1
+		export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
 		
 	    	# OTA
 	    	export OF_KEEP_DM_VERITY=1
